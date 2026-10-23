@@ -17,13 +17,11 @@ public class MonthMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
-
-         Write code that tests the methods you implement in the MonthlyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
-
+        //teste
+        // MonthlyPower.print_PowerUsage(power_usage_month);
+        //MonthlyPower.print_PowerPrices(power_prices_month);
+        //System.out.printf("%.2f kWh %n",MonthlyPower.computePowerUsage(power_usage_month));
+        //System.out.println(MonthlyPower.exceedThreshold(power_usage_month, 1000));
+        //System.out.printf("%.2f NOK %n",MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
     }
 }
