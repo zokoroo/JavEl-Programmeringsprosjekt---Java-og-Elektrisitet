@@ -32,9 +32,14 @@ public class Customers {
 
         boolean funnet = false;
         Customer c = null;
-
+        int i = 0;
         // TODO
-        while(!funnet){
+        while(customers[i]!=null && i < customers.length && !funnet){
+            if (customers[i].getCustomer_id() == customer_id){
+                c = customers[i];
+                funnet = true;
+            }
+            i ++;
 
         }
         return c;
