@@ -10,7 +10,7 @@ public class Customers {
     public Customers(int size) {
 
         // TODO
-
+        this.customers = new Customer[size];
     }
 
     // b) count number of non-null references
@@ -18,9 +18,12 @@ public class Customers {
 
 
         int count = 0;
-
         // TODO
-
+        for(Customer customer: customers) {
+            if(customer != null) {
+                count++;
+            }
+        }
         return count;
     }
 
@@ -31,7 +34,9 @@ public class Customers {
         Customer c = null;
 
         // TODO
+        while(!funnet){
 
+        }
         return c;
     }
 
