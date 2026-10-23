@@ -16,13 +16,11 @@ public class DayMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
-
-         Write code that tests the methods you implement in the DailyPower class
-         Remember to teste the methods as you implement them
-         Remember to also to check that you get the expected results
-         */
-
+        // Tester av funksjoner
+        //DailyPower.printPowerPrices(powerprices_day);
+        //DailyPower.printPowerUsage(powerusage_day);
+        //DailyPower.computePowerUsage(powerusage_day);
+        //DailyPower.computeSpotPrice(powerusage_day, powerprices_day);
+        //System.out.printf("%.2f NOK ",DailyPower.computePowerSupport(powerusage_day, powerprices_day));
     }
 }
