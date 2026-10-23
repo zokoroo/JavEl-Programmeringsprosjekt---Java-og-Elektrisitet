@@ -84,10 +84,18 @@ public class Customers {
     // f) return reference table with all customers
     public Customer[] getCustomers() {
 
-        Customer[] customers = null;
+        Customer[] customers = new Customer[countNonNull()];
 
         // TODO
-
+        int i = 0;
+        int j = 0;
+        for(Customer customer: this.customers){
+            if (this.customers[i] != null){
+                customers[j] = this.customers[i];
+                j++;
+            }
+            i++;
+        }
         return customers;
     }
 }
