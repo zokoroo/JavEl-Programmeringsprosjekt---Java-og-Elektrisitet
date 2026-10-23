@@ -18,6 +18,14 @@ public class CustomersMain {
          Write code that uses and tests the methods implemented in the Customers class
 
         */
-
+        Customers register = new Customers(2);
+        System.out.println(register.countNonNull());
+        Customer n1 = new Customer("Alice Smith","alice@example.com",1001,PowerAgreementType.SPOTPRICE);
+        Customer n2 = new Customer("Bob Johnson","bob@example.com",1002,PowerAgreementType.NORGESPRICE);
+        System.out.println(register.addCustomer(n1));
+        register.addCustomer(n2);
+        System.out.println(register.getCustomer(1002));
+        register.removeCustomer(1001);
+        System.out.println(register.getCustomers().length);
     }
 }
