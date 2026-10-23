@@ -21,6 +21,9 @@ public class DayMain {
         //DailyPower.printPowerUsage(powerusage_day);
         //DailyPower.computePowerUsage(powerusage_day);
         //DailyPower.computeSpotPrice(powerusage_day, powerprices_day);
-        //System.out.printf("%.2f NOK ",DailyPower.computePowerSupport(powerusage_day, powerprices_day));
+        //System.out.printf("%.2f NOK %n",DailyPower.computePowerSupport(powerusage_day, powerprices_day));
+        //System.out.printf("%.2f NOK %n", DailyPower.computeNorgesPrice(powerusage_day));
+        //System.out.printf("%.2f kWh %n", DailyPower.findPeakUsage(powerusage_day));
+        System.out.printf("%.2f kWh %n", DailyPower.findAvgPower(powerusage_day));
     }
 }
