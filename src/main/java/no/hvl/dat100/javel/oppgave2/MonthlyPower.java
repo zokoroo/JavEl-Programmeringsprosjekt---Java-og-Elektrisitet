@@ -64,9 +64,9 @@ public class MonthlyPower {
     public static double computePowerSupport(double[][] usage, double[][] prices) {
 
         double support = 0;
-
-        // TODO
-
+        for(int i = 0; i < usage.length; i++) {
+            support += DailyPower.computePowerSupport(usage[i], prices[i]);
+        }
         return support;
     }
 
@@ -75,7 +75,9 @@ public class MonthlyPower {
 
         double price = 0;
 
-        // TODO
+        for ( double[] dag: usage) {
+            price += DailyPower.computeNorgesPrice(dag);
+        }
 
         return price;
     }

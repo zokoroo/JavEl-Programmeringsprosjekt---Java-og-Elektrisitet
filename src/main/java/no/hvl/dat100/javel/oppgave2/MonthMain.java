@@ -23,5 +23,7 @@ public class MonthMain {
         //System.out.printf("%.2f kWh %n",MonthlyPower.computePowerUsage(power_usage_month));
         //System.out.println(MonthlyPower.exceedThreshold(power_usage_month, 1000));
         //System.out.printf("%.2f NOK %n",MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
+        //System.out.printf("%.2f NOK %n",MonthlyPower.computePowerSupport(power_usage_month, power_prices_month));
+        //System.out.printf("%.2f NOK %n",MonthlyPower.computeNorgesPrice(power_usage_month));
     }
 }
